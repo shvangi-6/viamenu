@@ -1,0 +1,17 @@
+/* Manager list cell content (owner + assignment chips). Layout comes from the shared list components. */
+.mgr-chip {
+  font-size: 11px;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+.mgr-chip--rest { background: #e7f4ef; color: #2c8769; border: 1px solid #b9e0d1; }
+.mgr-chip--menu { background: #fdf3e3; color: #9a6b1a; border: 1px solid #f0d9ac; }
+.mgr-unassigned { color: #9ca3af; font-size: 12px; font-style: italic; }
+.mgr-owner-name { font-size: 13px; color: #12211c; font-weight: 500; }
+.mgr-owner-co { font-size: 11px; color: #8c9a94; font-style: italic; }
+.mgr-assign { display: flex; flex-wrap: wrap; gap: 4px; max-width: 260px; }
+.mgr-owners { display: flex; flex-direction: column; gap: 6px; max-width: 200px; }

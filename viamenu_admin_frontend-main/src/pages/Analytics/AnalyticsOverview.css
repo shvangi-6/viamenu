@@ -1,0 +1,23 @@
+.ao-page { padding: 20px; min-height: 100vh; background: #f1f5f9; }
+.ao-header { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+.ao-title { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0; }
+.ao-subtitle { font-size: 13px; color: #64748b; margin: 4px 0 0; }
+.ao-date-range { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; background: #fff; padding: 12px 16px; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.ao-date-range label { font-size: 12px; color: #64748b; font-weight: 500; }
+.ao-date-input { padding: 6px 10px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 13px; outline: none; }
+.ao-date-input:focus { border-color: #2c8769; }
+.ao-loading { padding: 80px; display: flex; justify-content: center; }
+.ao-spinner { width: 40px; height: 40px; border: 3px solid #e2e8f0; border-top-color: #2c8769; border-radius: 50%; animation: ao-spin .7s linear infinite; }
+@keyframes ao-spin { to { transform: rotate(360deg); } }
+.ao-stats { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.ao-tables { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 768px) { .ao-tables { grid-template-columns: 1fr; } }
+.ao-table-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.ao-table-title { font-size: 15px; font-weight: 600; color: #1e293b; margin: 0 0 16px; }
+.ao-no-data { padding: 24px; text-align: center; color: #94a3b8; font-size: 13px; }
+.ao-table { width: 100%; border-collapse: collapse; }
+.ao-table th { font-size: 12px; font-weight: 600; color: #64748b; padding: 8px 10px; border-bottom: 1px solid #e2e8f0; text-align: left; }
+.ao-table td { padding: 8px 10px; border-bottom: 1px solid #f1f5f9; font-size: 13px; color: #374151; vertical-align: middle; }
+.ao-bar-row { display: flex; align-items: center; gap: 8px; }
+.ao-bar { height: 8px; background: #2c8769; border-radius: 4px; min-width: 4px; transition: width .3s; }
+.ao-bar--blue { background: #3b82f6; }

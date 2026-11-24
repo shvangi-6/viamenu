@@ -1,0 +1,24 @@
+.aa-page { padding: 20px; min-height: 100vh; background: #f1f5f9; }
+.aa-header { margin-bottom: 20px; }
+.aa-title { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0; }
+.aa-subtitle { font-size: 13px; color: #64748b; margin: 4px 0 0; }
+.aa-stats { display: flex; gap: 16px; margin-bottom: 20px; }
+.aa-filters { display: flex; gap: 10px; margin-bottom: 16px; align-items: center; }
+.aa-search-wrap { position: relative; flex: 1; min-width: 220px; }
+.aa-search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #94a3b8; font-size: 13px; }
+.aa-search { width: 100%; padding: 8px 32px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 13px; outline: none; }
+.aa-clear { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #94a3b8; cursor: pointer; font-size: 12px; }
+.aa-btn { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 8px; border: 1px solid #e2e8f0; background: #fff; cursor: pointer; font-size: 12px; }
+.aa-table-wrap { background: #fff; border-radius: 12px; overflow: auto; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.aa-loader { padding: 60px; display: flex; justify-content: center; }
+.aa-spinner { width: 36px; height: 36px; border: 3px solid #e2e8f0; border-top-color: #2c8769; border-radius: 50%; animation: aa-spin .7s linear infinite; }
+@keyframes aa-spin { to { transform: rotate(360deg); } }
+.aa-empty { padding: 48px; text-align: center; color: #94a3b8; font-size: 14px; }
+.aa-table { width: 100%; border-collapse: collapse; }
+.aa-table th { background: #2c8769; color: #fff; padding: 12px 14px; font-size: 12px; font-weight: 600; text-align: left; }
+.aa-table td { padding: 12px 14px; border-bottom: 1px solid #f1f5f9; font-size: 13px; color: #374151; vertical-align: middle; }
+.aa-admin { display: flex; align-items: center; gap: 10px; }
+.aa-avatar { width: 36px; height: 36px; border-radius: 50%; background: #2c8769; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; flex-shrink: 0; }
+.aa-name { font-weight: 600; color: #1e293b; }
+.aa-email { font-size: 11px; color: #64748b; }
+.aa-role { background: #d1fae5; color: #065f46; padding: 3px 10px; border-radius: 10px; font-size: 11px; font-weight: 600; }

@@ -1,0 +1,302 @@
+/* ═══════════════════════════════════════════════════════
+   AllRestaurants — cell content & row-action styles
+   (page/header/stats/filters/table/pagination scaffolding now
+   comes from components/common/shared.css)
+   Theme: #2c8769 (green), #f8f9fa (bg), #333 (text)
+═══════════════════════════════════════════════════════ */
+
+:root {
+  --green:      #2c8769;
+  --green-dark: #236b53;
+  --green-soft: #e8f5f0;
+  --amber:      #f59e0b;
+  --amber-soft: #fef3c7;
+  --blue:       #3b82f6;
+  --blue-soft:  #dbeafe;
+  --red:        #ef4444;
+  --red-soft:   #fee2e2;
+  --purple:     #8b5cf6;
+  --purple-soft:#ede9fe;
+  --text:       #1e293b;
+  --text-muted: #64748b;
+  --border:     #e2e8f0;
+  --bg:         #f1f5f9;
+}
+
+/* ── Name cell ── */
+.ar-name-cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.ar-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.ar-name {
+  font-weight: 600;
+  color: var(--text);
+  font-size: 13px;
+}
+.ar-contact {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-top: 1px;
+}
+
+/* ── Owner cell ── */
+.ar-owner-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ar-owner-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--blue-soft);
+  color: var(--blue);
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.ar-owner-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
+}
+.ar-owner-email {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ── Location ── */
+.ar-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+  color: var(--text);
+}
+.ar-loc-icon { color: var(--text-muted); font-size: 11px; flex-shrink: 0; }
+
+/* ── Tags ── */
+.ar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  max-width: 160px;
+}
+
+.ar-tag {
+  padding: 2px 7px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+.ar-tag.type    { background: var(--green-soft);  color: var(--green); }
+.ar-tag.biz     { background: var(--blue-soft);   color: var(--blue); }
+.ar-tag.cuisine { background: var(--amber-soft);  color: #92400e; }
+
+/* ── Status badge ── */
+.ar-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.ar-status-badge.published { background: var(--blue-soft);   color: var(--blue); }
+.ar-status-badge.draft     { background: var(--amber-soft);  color: #92400e; }
+
+/* ── Verified ── */
+.ar-verified {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 20px;
+}
+.ar-verified.yes { background: var(--green-soft); color: var(--green); }
+.ar-verified.no  { background: var(--red-soft);   color: var(--red); }
+
+.ar-qr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-size: 10px;
+  background: var(--purple-soft);
+  color: var(--purple);
+  padding: 2px 6px;
+  border-radius: 20px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+/* ── Services ── */
+.ar-services {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 150px;
+}
+
+.ar-service {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+}
+.ar-service.on  { background: var(--green-soft); color: var(--green); }
+.ar-service.off { background: #f1f5f9; color: #cbd5e1; }
+
+.ar-service-label {
+  font-size: 10px;
+  background: var(--bg);
+  color: var(--text-muted);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ── Content counts ── */
+.ar-counts {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ar-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+.ar-count.menus  { background: var(--green-soft); color: var(--green); }
+.ar-count.dishes { background: var(--amber-soft); color: #92400e; }
+
+/* ── Date ── */
+.ar-date { color: var(--text-muted); font-size: 12px; white-space: nowrap; }
+
+/* ── Muted ── */
+.ar-muted { color: #cbd5e1; font-size: 12px; }
+
+/* ── Actions ── */
+.ar-actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ar-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  transition: all .18s;
+  position: relative;
+}
+.ar-btn:disabled { opacity: .5; cursor: not-allowed; }
+
+.ar-btn.view {
+  background: var(--blue-soft);
+  color: var(--blue);
+}
+.ar-btn.view:hover:not(:disabled) {
+  background: var(--blue);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.ar-btn.verify {
+  background: #f1f5f9;
+  color: var(--text-muted);
+}
+.ar-btn.verify.active {
+  background: var(--green-soft);
+  color: var(--green);
+}
+.ar-btn.verify:hover:not(:disabled) {
+  background: var(--green);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.ar-btn.status-toggle {
+  background: var(--amber-soft);
+  color: #92400e;
+  font-size: 17px;
+}
+.ar-btn.status-toggle.published {
+  background: var(--green-soft);
+  color: var(--green);
+}
+.ar-btn.status-toggle:hover:not(:disabled) {
+  background: var(--green);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.ar-btn.menus-drill {
+  background: #eff6ff;
+  color: #3b82f6;
+  border: 1px solid #bfdbfe;
+}
+.ar-btn.menus-drill:hover {
+  background: #3b82f6;
+  color: #fff;
+}
+
+/* mini spinner for action buttons */
+.ar-mini-spin {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: ar-spin .6s linear infinite;
+}
+
+@keyframes ar-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Four row buttons stacked 2×2 to keep the (pinned) Actions column narrow. */
+.ar-table .ar-actions { display: grid; grid-template-columns: repeat(2, 32px); gap: 5px; }

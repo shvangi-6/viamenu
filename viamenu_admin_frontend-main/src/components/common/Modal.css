@@ -1,0 +1,30 @@
+.mdl-overlay { position: fixed; inset: 0; background: rgba(15, 23, 42, .45); display: flex; align-items: center;
+               justify-content: center; z-index: 1100; padding: 20px; }
+.mdl-box     { background: #fff; border-radius: 14px; width: 100%; max-width: 560px; max-height: 88vh; display: flex;
+               flex-direction: column; box-shadow: 0 20px 50px rgba(0, 0, 0, .2); }
+.mdl-box--wide { max-width: 860px; }
+.mdl-head    { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #e2e8f0; }
+.mdl-title   { margin: 0; font-size: 17px; font-weight: 700; color: #1e293b; }
+.mdl-x       { border: none; background: none; color: #64748b; cursor: pointer; font-size: 16px; }
+.mdl-body    { padding: 18px 20px; overflow-y: auto; }
+.mdl-foot    { padding: 14px 20px; border-top: 1px solid #e2e8f0; display: flex; justify-content: flex-end; gap: 8px; }
+
+/* Form bits used inside modals and the settings page */
+.fm-field    { margin-bottom: 14px; }
+.fm-label    { display: block; font-size: 12px; font-weight: 600; color: #475569; margin-bottom: 6px; }
+.fm-input, .fm-select, .fm-textarea { width: 100%; box-sizing: border-box; padding: 9px 12px; border: 1px solid #e2e8f0;
+               border-radius: 10px; font-size: 13px; font-family: inherit; outline: none; background: #fff; }
+.fm-input:focus, .fm-select:focus, .fm-textarea:focus { border-color: #2c8769; }
+.fm-textarea { min-height: 100px; resize: vertical; }
+.fm-check    { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #1e293b; }
+.fm-hint     { font-size: 11px; color: #64748b; margin-top: 4px; }
+.btn-plain   { padding: 9px 16px; border-radius: 10px; border: 1px solid #e2e8f0; background: #fff; cursor: pointer; font-size: 13px; }
+.btn-danger  { padding: 9px 16px; border-radius: 10px; border: none; background: #ef4444; color: #fff; cursor: pointer; font-size: 13px; font-weight: 600; }
+.btn-danger:disabled, .ps-btn:disabled { opacity: .55; cursor: not-allowed; }
+
+/* Chat-style thread (support tickets) */
+.thread      { display: flex; flex-direction: column; gap: 10px; }
+.msg         { max-width: 80%; padding: 10px 14px; border-radius: 12px; font-size: 13px; white-space: pre-wrap; }
+.msg--user   { align-self: flex-start; background: #f1f5f9; }
+.msg--admin  { align-self: flex-end; background: #d1fae5; }
+.msg-meta    { font-size: 10px; color: #64748b; margin-top: 4px; }

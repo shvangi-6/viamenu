@@ -1,0 +1,21 @@
+.ir-page { padding: 20px; min-height: 100vh; background: #f1f5f9; }
+.ir-header { margin-bottom: 20px; }
+.ir-title { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0; }
+.ir-subtitle { font-size: 13px; color: #64748b; margin: 4px 0 0; }
+.ir-stats { display: flex; gap: 16px; margin-bottom: 20px; }
+.ir-table-wrap { background: #fff; border-radius: 12px; overflow: auto; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.ir-loader { padding: 60px; display: flex; justify-content: center; }
+.ir-spinner { width: 36px; height: 36px; border: 3px solid #e2e8f0; border-top-color: #ef4444; border-radius: 50%; animation: ir-spin .7s linear infinite; }
+@keyframes ir-spin { to { transform: rotate(360deg); } }
+.ir-empty { padding: 48px; text-align: center; color: #94a3b8; font-size: 14px; }
+.ir-table { width: 100%; border-collapse: collapse; }
+.ir-table th { background: #ef4444; color: #fff; padding: 12px 14px; font-size: 12px; font-weight: 600; text-align: left; }
+.ir-table td { padding: 12px 14px; border-bottom: 1px solid #f1f5f9; font-size: 13px; color: #374151; vertical-align: middle; }
+.ir-rest { display: flex; align-items: center; gap: 10px; }
+.ir-avatar { width: 36px; height: 36px; border-radius: 8px; background: #ef4444; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; flex-shrink: 0; }
+.ir-name { font-weight: 600; color: #1e293b; }
+.ir-email { font-size: 11px; color: #64748b; }
+.ir-sub { font-size: 11px; color: #64748b; }
+.ir-issues { display: flex; flex-wrap: wrap; gap: 4px; }
+.ir-issue { background: #fee2e2; color: #991b1b; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 500; white-space: nowrap; }
+.ir-btn { display: inline-flex; align-items: center; gap: 5px; padding: 6px 12px; border-radius: 8px; border: none; background: #e0f2fe; color: #0c4a6e; cursor: pointer; font-size: 12px; font-weight: 500; }

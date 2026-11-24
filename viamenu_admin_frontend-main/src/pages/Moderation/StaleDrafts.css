@@ -1,0 +1,25 @@
+.sd-page { padding: 20px; min-height: 100vh; background: #f1f5f9; }
+.sd-header { margin-bottom: 20px; }
+.sd-title { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0; }
+.sd-subtitle { font-size: 13px; color: #64748b; margin: 4px 0 0; }
+.sd-stats { display: flex; gap: 16px; margin-bottom: 20px; }
+.sd-table-wrap { background: #fff; border-radius: 12px; overflow: auto; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.sd-loader { padding: 60px; display: flex; justify-content: center; }
+.sd-spinner { width: 36px; height: 36px; border: 3px solid #e2e8f0; border-top-color: #f59e0b; border-radius: 50%; animation: sd-spin .7s linear infinite; }
+@keyframes sd-spin { to { transform: rotate(360deg); } }
+.sd-empty { padding: 48px; text-align: center; color: #94a3b8; font-size: 14px; }
+.sd-table { width: 100%; border-collapse: collapse; }
+.sd-table th { background: #f59e0b; color: #fff; padding: 12px 14px; font-size: 12px; font-weight: 600; text-align: left; }
+.sd-table td { padding: 12px 14px; border-bottom: 1px solid #f1f5f9; font-size: 13px; color: #374151; vertical-align: middle; }
+.sd-rest { display: flex; align-items: center; gap: 10px; }
+.sd-avatar { width: 36px; height: 36px; border-radius: 8px; background: #f59e0b; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 14px; font-weight: 600; flex-shrink: 0; }
+.sd-name { font-weight: 600; color: #1e293b; }
+.sd-email { font-size: 11px; color: #64748b; }
+.sd-days { background: #fef3c7; color: #92400e; padding: 3px 10px; border-radius: 10px; font-size: 12px; font-weight: 600; }
+.sd-days--old { background: #fee2e2; color: #991b1b; }
+.sd-actions { display: flex; gap: 6px; }
+.sd-btn { display: inline-flex; align-items: center; gap: 5px; padding: 6px 12px; border-radius: 8px; border: none; cursor: pointer; font-size: 12px; font-weight: 500; }
+.sd-btn--view { background: #e0f2fe; color: #0c4a6e; }
+.sd-btn--publish { background: #d1fae5; color: #065f46; }
+.sd-btn:disabled { opacity: .6; cursor: not-allowed; }
+.sd-mini-spin { display: inline-block; width: 12px; height: 12px; border: 2px solid rgba(0,0,0,.2); border-top-color: currentColor; border-radius: 50%; animation: sd-spin .6s linear infinite; }

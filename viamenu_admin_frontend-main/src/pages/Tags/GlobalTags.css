@@ -1,0 +1,64 @@
+.gt-page { padding: 20px; min-height: 100vh; background: #f1f5f9; }
+.gt-header { margin-bottom: 20px; }
+.gt-title { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0; }
+.gt-subtitle { font-size: 13px; color: #64748b; margin: 4px 0 0; }
+.gt-stats { display: flex; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.gt-filters { display: flex; gap: 10px; margin-bottom: 16px; align-items: center; flex-wrap: wrap; }
+.gt-search-wrap { position: relative; flex: 1; min-width: 220px; }
+.gt-search-icon { position: absolute; left: 10px; top: 50%; transform: translateY(-50%); color: #94a3b8; font-size: 13px; }
+.gt-search { width: 100%; padding: 8px 32px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 13px; outline: none; }
+.gt-clear { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); color: #94a3b8; cursor: pointer; font-size: 12px; }
+.gt-btn { display: inline-flex; align-items: center; gap: 6px; padding: 7px 12px; border-radius: 8px; border: 1px solid #e2e8f0; background: #fff; cursor: pointer; font-size: 12px; }
+.gt-btn:disabled { opacity: .55; cursor: not-allowed; }
+.gt-btn--primary { background: #2c8769; border-color: #2c8769; color: #fff; font-weight: 600; }
+.gt-btn--primary:hover:not(:disabled) { background: #1f6b52; }
+.gt-table-wrap { background: #fff; border-radius: 12px; overflow: auto; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.gt-loader { padding: 60px; display: flex; justify-content: center; }
+.gt-spinner { width: 36px; height: 36px; border: 3px solid #e2e8f0; border-top-color: #2c8769; border-radius: 50%; animation: gt-spin .7s linear infinite; }
+@keyframes gt-spin { to { transform: rotate(360deg); } }
+.gt-empty { padding: 48px; text-align: center; color: #94a3b8; font-size: 14px; }
+.gt-table { width: 100%; border-collapse: collapse; }
+.gt-table th { background: #2c8769; color: #fff; padding: 12px 14px; font-size: 12px; font-weight: 600; text-align: left; }
+.gt-table td { padding: 12px 14px; border-bottom: 1px solid #f1f5f9; font-size: 13px; color: #374151; vertical-align: middle; }
+.gt-tag { display: flex; align-items: center; gap: 8px; }
+.gt-icon { width: 28px; height: 28px; border-radius: 6px; object-fit: contain; }
+.gt-icon-placeholder { width: 28px; height: 28px; border-radius: 6px; background: #d1fae5; color: #2c8769; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+.gt-name { font-weight: 600; color: #1e293b; }
+.gt-type { background: #d1fae5; color: #065f46; padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 600; }
+.gt-status { padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+.gt-status--active { background: #d1fae5; color: #065f46; }
+.gt-status--inactive { background: #f1f5f9; color: #64748b; }
+
+/* ── Add Global Tag modal ────────────────────────────────────────────── */
+.gt-modal-overlay { position: fixed; inset: 0; background: rgba(15,23,42,.5); display: flex; align-items: center; justify-content: center; z-index: 1050; padding: 16px; }
+.gt-modal { background: #fff; border-radius: 14px; width: 100%; max-width: 440px; box-shadow: 0 12px 40px rgba(0,0,0,.18); overflow: hidden; }
+.gt-modal-header { display: flex; align-items: center; justify-content: space-between; padding: 16px 20px; border-bottom: 1px solid #f1f5f9; }
+.gt-modal-title { display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; color: #1e293b; margin: 0; }
+.gt-modal-close { background: none; border: none; color: #94a3b8; cursor: pointer; font-size: 15px; padding: 4px; line-height: 1; border-radius: 6px; }
+.gt-modal-close:hover:not(:disabled) { background: #f1f5f9; color: #475569; }
+.gt-modal-body { padding: 20px; }
+.gt-field { margin-bottom: 16px; }
+.gt-field:last-child { margin-bottom: 0; }
+.gt-label { display: block; font-size: 12px; font-weight: 600; color: #475569; margin-bottom: 6px; }
+.gt-input { width: 100%; padding: 9px 12px; border: 1px solid #e2e8f0; border-radius: 8px; font-size: 13px; outline: none; transition: border-color .15s; }
+.gt-input:focus { border-color: #2c8769; }
+.gt-icon-upload { display: flex; align-items: center; gap: 14px; }
+.gt-icon-preview { width: 64px; height: 64px; border-radius: 10px; object-fit: cover; border: 1px solid #e2e8f0; flex-shrink: 0; }
+.gt-icon-preview--empty { display: flex; align-items: center; justify-content: center; background: #f1f5f9; color: #94a3b8; font-size: 22px; border-style: dashed; }
+.gt-icon-upload-info { flex: 1; min-width: 0; }
+.gt-icon-upload-info input[type="file"] { font-size: 12px; width: 100%; }
+.gt-upload-hint { display: block; color: #94a3b8; font-size: 11px; margin-top: 6px; }
+.gt-upload-ok { display: block; color: #16a34a; font-size: 12px; font-weight: 600; margin-top: 6px; }
+.gt-progress { position: relative; height: 18px; background: #f1f5f9; border-radius: 9px; overflow: hidden; margin-top: 8px; }
+.gt-progress-bar { height: 100%; background: #2c8769; transition: width .2s; }
+.gt-progress-text { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 600; color: #1e293b; }
+.gt-modal-footer { display: flex; justify-content: flex-end; gap: 10px; padding: 14px 20px; border-top: 1px solid #f1f5f9; }
+.gt-toggle-row { display: flex; align-items: center; gap: 10px; }
+.gt-toggle-label { font-size: 12px; font-weight: 600; color: #475569; }
+.gt-action-btn { display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 30px; border: 1px solid #e2e8f0; background: #fff; color: #2c8769; border-radius: 7px; cursor: pointer; font-size: 13px; transition: background .15s, border-color .15s; }
+.gt-action-btn:hover { background: #d1fae5; border-color: #2c8769; }
+.gt-action-btn + .gt-action-btn { margin-left: 6px; }
+.gt-action-btn--danger { color: #ef4444; }
+.gt-action-btn--danger:hover { background: #fee2e2; border-color: #ef4444; }
+.gt-btn--danger { background: #ef4444; border-color: #ef4444; color: #fff; font-weight: 600; }
+.gt-btn--danger:hover:not(:disabled) { background: #dc2626; }

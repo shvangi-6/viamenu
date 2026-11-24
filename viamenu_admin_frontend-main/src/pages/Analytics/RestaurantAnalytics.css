@@ -1,0 +1,20 @@
+.ra-page { padding: 20px; min-height: 100vh; background: #f1f5f9; }
+.ra-header { margin-bottom: 20px; }
+.ra-title { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0; }
+.ra-subtitle { font-size: 13px; color: #64748b; margin: 4px 0 0; }
+.ra-stats { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.ra-loading { padding: 80px; display: flex; justify-content: center; }
+.ra-spinner { width: 40px; height: 40px; border: 3px solid #e2e8f0; border-top-color: #2c8769; border-radius: 50%; animation: ra-spin .7s linear infinite; }
+@keyframes ra-spin { to { transform: rotate(360deg); } }
+.ra-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.ra-card-title { font-size: 16px; font-weight: 600; color: #1e293b; margin: 0 0 16px; }
+.ra-no-data { padding: 24px; text-align: center; color: #94a3b8; font-size: 13px; }
+.ra-table { width: 100%; border-collapse: collapse; }
+.ra-table th { font-size: 12px; font-weight: 600; color: #64748b; padding: 8px 12px; border-bottom: 1px solid #e2e8f0; text-align: left; }
+.ra-table td { padding: 10px 12px; border-bottom: 1px solid #f1f5f9; font-size: 13px; color: #374151; vertical-align: middle; }
+.ra-rank { font-weight: 700; color: #2c8769; }
+.ra-restaurant { display: flex; align-items: center; gap: 8px; }
+.ra-avatar { width: 28px; height: 28px; border-radius: 6px; background: #2c8769; color: #fff; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 600; flex-shrink: 0; }
+.ra-bar-row { display: flex; align-items: center; gap: 8px; }
+.ra-bar { height: 8px; background: #2c8769; border-radius: 4px; min-width: 4px; }
+.ra-count { font-weight: 600; color: #1e293b; }

@@ -1,0 +1,23 @@
+.cs-page { padding: 20px; min-height: 100vh; background: #f1f5f9; }
+.cs-header { margin-bottom: 20px; }
+.cs-title { font-size: 22px; font-weight: 700; color: #1e293b; margin: 0; }
+.cs-subtitle { font-size: 13px; color: #64748b; margin: 4px 0 0; }
+.cs-stats { display: flex; gap: 16px; margin-bottom: 24px; flex-wrap: wrap; }
+.cs-loading { padding: 80px; display: flex; justify-content: center; }
+.cs-spinner { width: 40px; height: 40px; border: 3px solid #e2e8f0; border-top-color: #2c8769; border-radius: 50%; animation: cs-spin .7s linear infinite; }
+@keyframes cs-spin { to { transform: rotate(360deg); } }
+.cs-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 768px) { .cs-grid { grid-template-columns: 1fr; } }
+.cs-card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,.06); }
+.cs-card-title { font-size: 15px; font-weight: 600; color: #1e293b; margin: 0 0 16px; }
+.cs-donut-rows { display: flex; flex-direction: column; gap: 12px; }
+.cs-donut-row { display: flex; align-items: center; gap: 10px; }
+.cs-dot { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
+.cs-dot--published { background: #2c8769; }
+.cs-dot--draft { background: #f59e0b; }
+.cs-donut-row span { flex: 1; font-size: 14px; color: #475569; }
+.cs-donut-row strong { font-size: 18px; color: #1e293b; }
+.cs-avg-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.cs-avg { text-align: center; padding: 16px; background: #f8fafc; border-radius: 10px; }
+.cs-avg-value { font-size: 28px; font-weight: 700; color: #2c8769; }
+.cs-avg-label { font-size: 12px; color: #64748b; margin-top: 4px; }

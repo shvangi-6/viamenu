@@ -1,0 +1,96 @@
+.stats-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, .05);
+  border: 1px solid #f1f5f9;
+  flex: 1;
+  min-width: 160px;
+  transition: transform .15s ease, box-shadow .15s ease, border-color .15s ease;
+}
+
+.stats-card--clickable {
+  cursor: pointer;
+}
+.stats-card--clickable:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px -10px rgba(15, 23, 42, .16);
+  border-color: color-mix(in srgb, var(--sc-color, #2c8769) 35%, #f1f5f9);
+}
+.stats-card--clickable:focus-visible {
+  outline: 2px solid var(--sc-color, #2c8769);
+  outline-offset: 2px;
+}
+
+.stats-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.stats-card__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.stats-card__label {
+  font-size: 12.5px;
+  color: #64748b;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stats-card__sub {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.stats-card__icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--sc-color, #2c8769) 12%, white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: var(--sc-color, #2c8769);
+  flex-shrink: 0;
+}
+
+.stats-card__value-row {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.stats-card__value {
+  font-size: 25px;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1;
+  letter-spacing: -.3px;
+}
+
+.stats-card__trend {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 7px;
+  border-radius: 20px;
+}
+.stats-card__trend--up { background: #dcfce7; color: #16a34a; }
+.stats-card__trend--down { background: #fee2e2; color: #dc2626; }
+.stats-card__trend--new { background: #dbeafe; color: #2563eb; }
+.stats-card__trend svg { font-size: 9px; }
